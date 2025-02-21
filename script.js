@@ -1,0 +1,4 @@
+// JavaScript for interactivity
+document.getElementById('cta-button').addEventListener('click', function() {
+    alert('Thank you for getting started with us!');
+});
