@@ -5,81 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snugride</title>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="snugride white.png" alt="Snugride Logo">
+        </div>
         <nav>
-            <div class="logo"><img src="snugride white.png" alt="Snugride Logo" width="100px" height=""></div>
             <ul class="nav-links">
-                <!--
-                <li><a href="#features">Features</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
-            -->
             </ul>
+            <div class="menu-toggle">&#9776;</div>
         </nav>
     </header>
 
     <section class="hero">
+        <video autoplay muted loop>
+            <source src="Video.mp4" type="video/mp4">
+        </video>
         <div class="hero-content">
-            <h1>Snugride</h1>
-            <p>Rides Built for Comfort, Designed for You</p>
-            <button id="cta-button">Get Started</button>
+            <img src="snugride white.png" alt="Snugride Logo">
+            <h1 class="h1-tag">Rides Built for Comfort, Designed for You</h1>
+            <a href="https://bit.ly/SnugrideCUWaitlist" class="primary-btn">JOIN THE WAITLIST</a>
         </div>
     </section>
 
-    <section id="features" class="features">
-        <h2>Our Services</h2>
-        <div class="feature-cards">
+    <section class="section-light" id="about">
+        <div class="grid about-content">
+            <div class="text-content">
+                <h2>About Snugride</h2>
+                <br>
+                <p class ="about-text">Snugride was born from the need for stress-free, reliable transportation. We believe travel should be more than just movement; it should be an experience.</p>
+            </div>
+            <div class="image-container">
+                <img src="Snugride about-us.png" alt="Modern Bus" class="about-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-dark" id="services">
+        <div class="grid">
+            <h2 style="color: var(--primary); text-align: center; margin-bottom: 40px;">Our Services</h2>
             <div class="card">
+                <img src="student-transport.jpg" alt="Student Transportation" class="about-img">
                 <h3>Student Transportation</h3>
-                <p>Convenient travel for students.</p>
+                <p>Convenient travel for students</p>
             </div>
             <div class="card">
+                <img src="corporate-transport.jpg" alt="Corporate Transportation" class="about-img">
                 <h3>Corporate Transportation</h3>
-                <p>Comfortable rides for work commutes.</p>
+                <p>Comfortable rides for work commutes</p>
             </div>
             <div class="card">
+                <img src="event-transport.jpg" alt="Event Transportation" class="about-img">
                 <h3>Event & Group Transportation</h3>
-                <p>Book a bus for special occasions.</p>
+                <p>Book a bus for special occasions</p>
             </div>
         </div>
     </section>
 
-    <section id="features" class="features">
-        <h2>Testimonials</h2>
-        <div class="feature-cards">
-            <div class="card">
-                <p>Best road trip experience ever! Super comfy and safe</p>
-                <h4>Daniel, Covenant University Student</h4>
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <h2 style="color: var(--primary); text-align: center; margin-bottom: 40px;">Testimonials</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="daniel.jpg" alt="Daniel" class="testimonial-img">
+                    <p>Best road trip experience ever! Super comfy and safe</p>
+                    <h4>Daniel, Covenant University Student</h4>
             </div>
-            <div class="card">
+            <div class="testimonial-card">
+                <img src="annie.jpg" alt="Annie" class="testimonial-img">
                 <p>I loved the complimentary meal and smooth ride. Highly recommend!</p>
                 <h4>Annie, Student</h4>
             </div>
-            <div class="card">
+            <div class="testimonial-card">
+                <img src="chisom.jpg" alt="Chisom" class="testimonial-img">
                 <p>Affordable, stress-free, and reliable. My go-to travel service!</p>
                 <h4>Chisom, Student</h4>
+            </div>
             </div>
         </div>
     </section>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Got questions? Chat with us!</h1>
-            <button id="cta-button">Contact Us</button>
+    <section class="get-started">
+        <div class="container">
+            <div class="content">
+                <h2>Ready to Ride in Comfort?</h2>
+                <p>Experience the Snugride experience today</p>
+                <a href="https://snugride.com.ng/getstarted" class="primary-btn">GET STARTED</a>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Snugride. All rights reserved.</p>
-    </footer>
+    <section class="contact-section" id="contact">
+        <div class="contact-grid">
+            <div class="contact-method">
+                <i class="fas fa-phone"></i>
+                <h3>Call Us</h3>
+                <p><a href="tel:+2349028872403">+234 902 887 2403</a></p>
+                <a href="https://wa.me/2349028872403" class="primary-btn">Leave us a message</a>
+            </div>
+            <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>hello@snugride.com.ng</p>
+                <a href="mailto:hello@snugride.com.ng" class="primary-btn">Send Email</a>
+            </div>
+            <div class="contact-method">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://instagram.com/snugride"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/snugridehq"><i class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com/company/snugride"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://tiktok.com/@snugride"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
+    <footer class="section-dark">
+        <div class="grid">
+            <p>&copy; 2024 Snugride. All rights reserved.</p>
+        </div>
+    </footer>
+ <script src="script.js"></script>
 </body>
 </html>

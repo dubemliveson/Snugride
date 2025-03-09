@@ -1,0 +1,420 @@
+:root {
+    --primary: #7198e0;
+    --secondary: #fd7429;
+    --accent: #e23e36;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: var(--black);
+    color: var(--white);
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+}
+
+.primary-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    /* margin-left: auto; */
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+/* Add smooth scrolling for anchor links */
+html {
+scroll-behavior: smooth;
+}
+
+/* Card hover effects */
+.service-card:hover, .testimonial-card:hover {
+transform: translateY(-5px);
+transition: transform 0.3s ease;
+}
+
+.menu-toggle {
+    display: none;
+    color: var(--white);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 20px;
+}
+.hero h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.hero-button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 18px 45px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.hero button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.hero-content img {
+    height: 40px;
+}
+
+.about-text {
+    max-width: 450px;
+}
+.testimonial-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+ /* Services Section */
+ .services-section {
+    padding: 60px 20px;
+    background: var(--gray);
+}
+
+.service-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 48px;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+
+
+/* Section styling */
+section {
+    padding: 60px 0;
+}
+
+.section-dark {
+    background: var(--gray);
+}
+
+.section-light {
+    background: var(--white);
+}
+
+h2 {
+    color: #7198e0;
+}
+
+/* Image styling */
+.about-img {
+    border-radius: 15px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+.testimonial-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+    /* margin: 20px auto; */
+    margin-bottom: 20px;
+}
+
+/* Responsive grid */
+.grid {
+    display: grid;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Button styling */
+.primary-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin: 20px auto;
+    display: inline-block;
+}
+
+/* Contact section */
+.contact-section {
+    background: var(--gray);
+    padding: 60px 20px;
+}
+
+.contact-grid {
+    display: grid;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-method i {
+    font-size: 36px;
+    color: var(--primary);
+}
+
+/* Social media */
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    color: var(--primary);
+    font-size: 24px;
+    transition: transform 0.2s ease;
+}
+
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.grid-gallery {
+    display: grid;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    /* .grid {
+        grid-template-columns: 1fr;
+    } */
+    
+    .hero-content {
+        padding: 80px 20px;
+    }
+
+}
+
+  @media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    } 
+    
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+
+@media (min-width: 768px) {
+    .grid-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+    @media (min-width: 1024px) {
+    .grid-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .contact-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} 
+
+ /* New Get Started Section Styles */
+ .get-started {
+    background: var(--primary);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.get-started h2 {
+    color:white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.get-started p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.get-started .primary-btn {
+    background: #ffffff;
+    color: #7198e0;
+}
+/* Positioning between sections */
+/* .get-started {
+    margin: 30px auto;
+}  */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .get-started {
+        padding: 40px 20px;
+    }
+    
+    .get-started h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+    
+    .primary-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+    .hero h1 {
+        font-size: 48px;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+}
+/* 
+.testimonials-section {
+    margin-bottom: ;
+} */
+
+footer {
+    text-align: center;
+}
